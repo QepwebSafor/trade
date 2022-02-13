@@ -1,8 +1,7 @@
 Esta es la historia de Quica 
 Quica tiene 58 años y nació en Gandia.
 
-<<<<<<< HEAD
-Hoy hablaremos de su vida y obra maestra
-=======
+
+
 mañana nos enfocaremos en su vida laboral
->>>>>>> cabecera
+

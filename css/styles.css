@@ -1,9 +1,8 @@
 body {
     text-align:center;
-<<<<<<< HEAD
     font-family:Quicksand;
     color: deeppink;
-=======
+
     font-family:Verdana;
     color: #333;
     font-size:16px;
@@ -35,5 +34,4 @@ body {
     padding:  0 0 0 1em ;
     font-weight: normal;
     font-size: 0.8em;
->>>>>>> cabecera
 }
