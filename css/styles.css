@@ -35,6 +35,7 @@ body {
   vertical-align: middle;
 }
 #cabecera #tagline {
+<<<<<<< HEAD
   padding: 0 0 0 1em;
   font-weight: normal;
   font-size: 0.8em;
@@ -43,3 +44,16 @@ body {
   background: white;
   padding: 1em;
 }
+=======
+    padding:  0 0 0 1em ;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+#footer {
+
+    background:#ee216a;
+    color:#f4a0c7;
+    text-align: center;
+    padding:0.5em;
+}
+>>>>>>> footer
