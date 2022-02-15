@@ -1,37 +1,45 @@
 body {
-    text-align:center;
-    font-family:Quicksand;
-    color: deeppink;
-
-    font-family:Verdana;
-    color: #333;
-    font-size:16px;
-    margin:0;
-    padding:0;
+  text-align: center;
+  font-family: Quicksand;
+  color: deeppink;
+  background: #1e1f24;
+  font-family: Verdana;
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 #container {
-    width:70%;
-    padding:1em;
-    text-align: left;
-    border: 1px solid #ddd;
-    margin: 0 auto;
+  width: 70%;
+  padding: 1em;
+  text-align: left;
+  border: 1px solid #ddd;
+  margin: 0 auto;
 }
 
-#container h1{
-    font-size: 20px;
-
+#container h1 {
+  font-size: 20px;
 }
 #cabecera {
+  background: #37488b;
 
-    background: #33A;
-    color: white;
-    box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.75);
-    font-weight: bold;
-    margin:0;
-    padding:0.5em;
+  color: white;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em 0 0.5em 3em;
+}
+
+#cabecera #logo {
+  width: 20px;
+  vertical-align: middle;
 }
 #cabecera #tagline {
-    padding:  0 0 0 1em ;
-    font-weight: normal;
-    font-size: 0.8em;
+  padding: 0 0 0 1em;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+#post {
+  background-attachment: fixed;
+  padding: 1em;
 }
