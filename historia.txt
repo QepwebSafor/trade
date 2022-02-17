@@ -1,6 +1,27 @@
-Esta es la historia qepwebsafor 
-QEp tiene 59 y nació en Gandia.
 
-Aqui hablaremos de sus aprendizajes.
-En camara parece  fea pero es más guapa al natural.
-Hoy es CEO de ESOMA.
+¿Que es el staging y los repositorios?
+Para iniciar un repositorio, o sea, activar el sistema de control de versiones de GIt en el proyecto, solo debes  ejecutar el comando git init.
+Este comando se encargará de dos cosas: primero , crear una carpeta .git, donde se guardará todas la base de datos con cambios atómicos de nuestro proyecto; y segundo, creará un área conocida como Staging, que guardará temporalmente nuestros archivos ( cuando ejecutemos el comando add ) y nos permitirá, más adelante, guardar  estos cambios en el repositorio ( con el comando commit).
+
+Ciclo de vida o estados de los archivos en Git:
+Cuando trabajamos con git nuestros archivos pueden vivir y moverse entre 4 estados diferentes (cuando trabajamos con repositorios remotos pueden ser más estados):
+
+. Archivos tracked: son los archivos que viven dentro de GIt, no tienen cambios pendientes y sus últimas actualizaciones han sido guardadas en el repositorio gracias a los comandos git add y git commit.
+
+. Archivos Staged: son archivos en Staging. Viven dentro de GIt y  son los que han sido  añadidos por el comando git add, aunque no se han consolidado sus cambios. GIt sabe de la existencia de estos cambios, pero no han sido guardados definitivamente en el repositorio porque falta ejecutar el comando commit.
+
+. Archivos Unstaged: son  como archivos en tracked pero Unstaged. Son archivos que viven en Git pero  no se les ha aplicado el comando git add ni el git commit. Git tiene un registro de estos archivos, pero no están actualizados, solo están guardadas sus últimas versiones  en el disco duro.
+
+ . Archivos Untracked: son archivos que no viven dentro de GIt, solo en el disco duro. No se les ha aplicado git add, así que Git no tiene registro de us existencia. Solo hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: staged y untracked. Esto pasa cuando guardas cambios con el comando git add, y antes de hacer el commit haces nuevos cambios que no estan en el Staging porque  no has aplicado git add.
+
+ COMANDO PARA MOVER ARCHIVOS ENTRE LOS ESTADOS DE GIT:
+
+ . git status: nos permite ver el estado de todos nuestros archivos y carpetas.
+ . git add: nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre-del-archivo-o-carpeta para añadir archivos y carpetas individuales o git add -A para mover todos los archivos de nuestro proyecto ( tanto los Untracked como los Unstaged).
+ . git reset HEAD:  nos ayuda a sacar archivos
+
+El comando git checkout + ID del commit nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
+
+También hay una forma de hacerlo un poco más “ruda”: usando el comando git reset. En este caso, no solo “volvemos en el tiempo”, sino que borramos los cambios que hicimos después de este commit.
+
+Hay dos formas de usar git reset: con el argumento --hard, borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre). O, un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
