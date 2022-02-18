@@ -4,12 +4,12 @@ body {
     text-align:center;
     font-family:Quicksand;
     color: #333;
-    font-size:16px;
+    font-size:1.2rem;
     margin:0;
     padding:0;
 }
 #container {
-    width:70%;
+    width:80%;
     padding:1em;
     text-align: left;
     border: 1px solid #33A;
