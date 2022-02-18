@@ -50,3 +50,23 @@ El comando git checkout + ID del commit nos permite viajar en el tiempo. Podremo
    Este comando es muy peligroso y debemos usarlo solo en caso de emergencia. Recordar que debemos usar algunas de estas dos opciones:
 
    Hay dos formas  de usar git reset: con el argumento --hard, borrando toda la información que tengamos en el área de staging ( y perdiendo todo para siempor). O un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de stagin para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
+
+    . git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en staging, así podemos aplicar las últimas actualizaciónes a un nuevo commit.
+
+    . git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commit y del área de staging se borra del historioal.
+
+    ¡Pero hay algo más!
+
+    . git reset HEAD: este es el comando para sacar archivos del área de stagin. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión  y los incluyamos de nuevo en staging con git add, por supuesto.
+
+
+    ¿PORQUE ES IMPORTANTE ESTO?
+     Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo de Staging para poder hacer commit de todos los demás.
+
+     ¡Al usar git rm! lo que haremos será eliminar este archivo completamente de git! Todavía tendremos el historial de cambios de este archivo, con la eliminacion del archivo como su última actualización. Recuerda que en este caso no buscábamos eliminar un archivo, solo dejarlo como estaba y actualizado después, no en este commit.
+
+     En cambio si usamos git reset HEAD, lo único que harémos será move estos cambios de Staging a Unstaged. Seguiremos teniendo los últimos cambios en el archivo, el repositorio mantendrá el archivo ( no con sus últimos cambios pero si con los últimos en los que hicimos commit) y no habremos perdido nada.
+
+     Conclusión : lo mejor que puedes hacer para salvar tu puesto y evitar un incendio en tu trabajo es conocer muy bien la diferencia y los riesgos de todos los comandos de Git.
+
+     
