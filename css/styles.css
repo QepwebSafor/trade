@@ -47,11 +47,10 @@ body {
     color: #77b3f0;
 }
 #container {
-    width:70%;
-    padding:1em;
-    text-align: left;
-    border: 1px solid #33A;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem 1rem 1rem;
 }
 
 #container h1{
@@ -60,7 +59,7 @@ body {
 }
 #cabecera {
 
-    background: #33A;
+    background: #09203a;
     color: white;
     box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.75);
     font-weight: bold;
