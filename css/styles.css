@@ -3,9 +3,6 @@
 body {
     text-align:center;
     font-family:Quicksand;
-    color: deeppink;
-
-    font-family:Verdana;
     color: #333;
     font-size:16px;
     margin:0;
@@ -15,7 +12,7 @@ body {
     width:70%;
     padding:1em;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #33A;
     margin: 0 auto;
 }
 
