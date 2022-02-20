@@ -2,9 +2,9 @@ body {
     text-align:center;
     font-family:Quicksand;
     color: deeppink;
-
+    background:#350066;
     font-family:Verdana;
-    color: #333;
+    color: #eee;
     font-size:16px;
     margin:0;
     padding:0;
@@ -13,7 +13,7 @@ body {
     width:70%;
     padding:1em;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #661769;
     margin: 0 auto;
 }
 
@@ -23,15 +23,33 @@ body {
 }
 #cabecera {
 
-    background: #33A;
-    color: white;
+    background: #661769;
+    color: #f4a0c7;
     box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.75);
     font-weight: bold;
     margin:0;
     padding:0.5em;
+    vertical-align:middle;
+}
+#cabecera #logo {
+    vertical-align:middle;
+    
+}
+#post {
+    padding:1em;
+    background:white;
+    color:black;
+
 }
 #cabecera #tagline {
     padding:  0 0 0 1em ;
     font-weight: normal;
     font-size: 0.8em;
+}
+#footer {
+
+    background:#661769;
+    color:#f4a0c7;
+    text-align: center;
+    padding:0.5em;
 }
