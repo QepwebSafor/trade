@@ -71,3 +71,10 @@ body {
     font-weight: normal;
     font-size: 0.8em;
 }
+#footer {
+
+  background:#661769;
+  color:#f4a0c7;
+  text-align: center;
+  padding:0.5em;
+}
