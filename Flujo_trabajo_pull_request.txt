@@ -1,0 +1,5 @@
+FLUJO DE TRABAJO PROFESIONAL CON PULL REQUESTS
+
+En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y  si se aprueba se unen los códigos con los llamados merge request.
+
+Para analizar pruebas enviamos el código a servidores que normalmente los llamamos staging develop(servidores de pruebas) al realizar las pruebas pertinenetes tanto del código como de la aplicación estos pasan al servidor de producción con el ya antes mencionado merge request.
