@@ -55,6 +55,12 @@ body {
 
 #container h1{
     font-size: 20px;
+    color:aqua;
+
+}
+#container h2{
+  font-size: 1rem;
+  color:violet;
 
 }
 #cabecera {
@@ -73,8 +79,8 @@ body {
 }
 #footer {
 
-  background:#661769;
-  color:#f4a0c7;
+  background:violet;
+  color:blue;
   text-align: center;
   padding:0.5em;
 }

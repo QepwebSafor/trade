@@ -51,18 +51,22 @@ El comando git checkout + ID del commit nos permite viajar en el tiempo. Podremo
  Hay dos formas de usar gti reset: con el argumento --hard, borrando toda la información que tengamos en el área de staging ( y perdiendo todo para siempre). O, un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
  Git reset y git rm son comandos con utilidades muy diferentes, pero aún así se confunden muy fácilmente.
 
- git rm
+<h2>GIT RM</h2>
 
- -------------------------------------------------------------------------------
+<p>
   Este comando nos ayuda a eliminar archivos de GIt sin eliminar su historial del sistema de versiones. Esto quiere decir que si necesitamos recuperar el archivo solo debemos "viajar en el tiempo" y recuperar el último commit antes de borrar el archivo en cuestión.
 
   Recuerda que git rm no puede usarse así no más. Debemos usar uno de los flags para indicarle a GIt cómo eliminar los archivos que ya no necesitamos en la última versión del proyecto:
-
-    . git rm --cached:  Elimina los archivos de nuestro repositorio local y el área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a GIT que deje de trackear el historial de cambios de estos archivos, por lo que pasarán a un estado untracked.
-    . git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario ( pero  debemos usar comandos más avanzados).
-
-   GIT RESET 
-   ------------------------------------------------------------------------------
+<ul>
+   <li>git rm --cached: 
+      Elimina los archivos de nuestro repositorio local y el área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a GIT que deje de trackear el historial de cambios de estos archivos, por lo que pasarán a un estado untracked.</li> 
+   <li>. git rm --force:
+      Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario ( pero  debemos usar comandos más avanzados).> </li>
+   
+  </ul>
+</p>
+  <h2>GIT RESET</h2>  
+  <p>
    Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, pasear y volver. Con git reset volvemos al pasado si la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta a atrás.
 
    Este comando es muy peligroso y debemos usarlo solo en caso de emergencia. Recordar que debemos usar algunas de estas dos opciones:
