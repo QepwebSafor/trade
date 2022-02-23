@@ -3,3 +3,54 @@ FLUJO DE TRABAJO PROFESIONAL CON PULL REQUESTS
 En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y  si se aprueba se unen los códigos con los llamados merge request.
 
 Para analizar pruebas enviamos el código a servidores que normalmente los llamamos staging develop(servidores de pruebas) al realizar las pruebas pertinenetes tanto del código como de la aplicación estos pasan al servidor de producción con el ya antes mencionado merge request.
+
+GIT REBASE : REORGANIZANDO EL TRABAJO realizados
+
+El comando rebase es una mala práctica, nunca se debe usar, pero para efectos del tutorial lo veremos para hacer tus propios experimentos. Con rebase puedes recoger todos los cambios confirmados en una rama y ponerlos sobre otra.
+
+----------------------------------------------------------------------------
+
+# Cambiamos a la rama que queremos traer los cambios
+git checkout experiment
+
+# Aplicamos rebase para traer los cambios de la rama que queremos
+git rebase main
+
+------------------------------------------------------------------------------
+
+GIT STASH: GUARDAR CAMBIOS EN MEMORIA Y RECUPERARLOS después
+
+Cuando necesitemos regresar en el tiempo porque borramos alguna línea de código pero no queremos pasarnos a otra rama porque nos daría un error al tener que pasar por ese "mal cambio" que hicimos en stage, podremos usar git stash y regresar así al cambio anterior que hicimos.
+
+git stash es típico cuando hagamos cambios que no merecen una rama o no merecen un rebase si no que  simplemente estamos probando algo y queremos volver rápidamente a la versión anterior que es la correcta.
+-------------------------------------------------------------------------------
+GIT CLEAN: LIMPIAR TU PROYECTO DE ARCHIVOS NO DESEADOS
+
+A veces creas archivos cuando estas realizando proyectos y que realmente no forman parte de nuestro directorio de trabajo, que no los deberias agregar y lo sabes.
+
+.- Para saber que archivos son los que vamos a borrar tecleamos:
+         git clean --dry-run
+
+ .- Para borrar todos los archivos listados (que no sean carpetas) tecleamos:
+
+            git clean -f        
+
+-----------------------------------------------------------------------------
+GIT CHERRY-PICK: TRAER COMMITS VIEJOS AL HEAD DE UN BRANCH
+
+Existe un mundo alternativo en el cual vamos avanzado en una rama pero necesitamos en main uno de estos avances de la rama, para esto utilizaremos el comando :
+
+        git cherry-pick IDCommit.
+
+cherry-pick es una mala práctica porque significa que estamos reconstruyendo la historia,  usa cherry-pick con conocimiento de causa. No saber que es lo que estas haciendo  es peligroso.
+
+-------------------------------------------------------------------------------
+
+RECONSTRUIR COMMITS EN GIT CON 4AUmxNoeEvRTK36Seboi4KezmA38ADrTUaMddoEwZ
+
+
+ A veces hacemos un commit, pero resulta que no lo queremos mandar porque faltaba algo más. Utilizamos:
+
+            git commit --amend,
+
+  amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.          
