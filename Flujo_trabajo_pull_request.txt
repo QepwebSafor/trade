@@ -4,7 +4,7 @@ En un entorno profesional normalmente se bloquea la rama master, y para enviar c
 
 Para analizar pruebas enviamos el código a servidores que normalmente los llamamos staging develop(servidores de pruebas) al realizar las pruebas pertinenetes tanto del código como de la aplicación estos pasan al servidor de producción con el ya antes mencionado merge request.
 
-GIT REBASE : REORGANIZANDO EL TRABAJO realizados
+GIT REBASE : REORGANIZANDO EL TRABAJO REALIZADO
 
 El comando rebase es una mala práctica, nunca se debe usar, pero para efectos del tutorial lo veremos para hacer tus propios experimentos. Con rebase puedes recoger todos los cambios confirmados en una rama y ponerlos sobre otra.
 

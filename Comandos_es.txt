@@ -1,0 +1,32 @@
+Comenzar el espacio de trabajo 
+   clone             Clonar un repositorio en un nuevo directorio
+   init              Crear un repositorio Git vacio o reiniciar uno existente.
+
+Trabajar en el cambio actual
+   add               Añadir contenidos al fichero index.
+   mv                Mover o renombrar un fichero, un directorio o un symlink.
+   restore           Restableces el árbol de ficheros de trabajo 
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+Examinar la historia y el estado
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+Crecer, marcar y unir tu historia común
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+colaborar
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
