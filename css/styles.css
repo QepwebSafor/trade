@@ -53,15 +53,23 @@ container-fluid {
   padding: 0 1rem 1rem 1rem;
 }
 
-#container h1{
-    font-size: 20px;
-    color:aqua;
+h1{
+    font-size: 1.5rem;
+    color:#141414;
 
 }
-#container h2{
+ h2{
   font-size: 1rem;
   color:violet;
 
+}
+span {
+
+  color:violet;
+}
+ul {
+  list-style: none;
+  margin-left: 1rem;
 }
 #cabecera {
 
@@ -85,11 +93,4 @@ container-fluid {
   padding:0.5em;
 }
 
-span {
 
-  color:violet;
-}
-ul {
-  list-style: none;
-  margin-left: 1rem;
-}
