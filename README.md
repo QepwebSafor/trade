@@ -1,6 +1,13 @@
-# BlogTutorial
+## BlogTutorial
 
-* De Quica Espi con las enseñanzas de Freddier de Platzi
+
+
+
+* Comandos git 
+
+* Notas chistosas de freddier
+
+* El fluyo de trabajo en GitHub
 
 * Creado por Quica Espi con las enseñanzas de Freddier de Platzi
 
