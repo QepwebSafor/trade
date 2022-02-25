@@ -69,7 +69,7 @@ volveremos al estado en que el proyecto funcionaba:
 .- git reset --hard HashDelHEAD resetea absolutamente todo lo que tengas en staging.
 
 git reset es una mala práctica, se recomienda no usarlo; debe ser el último recurso.
---------------------------------------------------------------------------------BUSCAR EN ARCHIVOS Y COMMITS DE GIT CON GREP Y lPyRhefKAJc9GGWoP4X6O9t6GBHS
+--------------------------------------------------------------------------------BUSCAR EN ARCHIVOS Y COMMITS DE GIT CON GREP Y log
 
 A medida que se hace más grande el proyecto quieres ir buscando más cosas.
 Por ejemplo, ¿ Cuantas veces en nuestro proyecto buscamos la palabra color?
