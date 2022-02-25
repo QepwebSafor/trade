@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-Master 1
+
+
 
 Master 2
-=======
 Quica especifica
 
 
@@ -10,4 +9,4 @@ Expe 1
 
 Expe 2
 Main 1
->>>>>>> exp
+
