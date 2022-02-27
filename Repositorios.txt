@@ -14,7 +14,7 @@ Cuando trabajamos con git nuestros archivos pueden vivir y moverse entre 4 estad
 
  . Archivos Untracked: son archivos que no viven dentro de GIt, solo en el disco duro. No se les ha aplicado git add, así que Git no tiene registro de us existencia. Solo hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: staged y untracked. Esto pasa cuando guardas cambios con el comando git add, y antes de hacer el commit haces nuevos cambios que no estan en el Staging porque  no has aplicado git add.
 
- COMANDO PARA MOVER ARCHIVOS ENTRE LOS ESTADOS DE GIT:
+ COMANDOS PARA MOVER ARCHIVOS ENTRE LOS ESTADOS DE GIT:
 
  . git status: nos permite ver el estado de todos nuestros archivos y carpetas.
  . git add: nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre-del-archivo-o-carpeta para añadir archivos y carpetas individuales o git add -A para mover todos los archivos de nuestro proyecto ( tanto los Untracked como los Unstaged).

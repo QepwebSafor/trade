@@ -1,13 +1,13 @@
 
+### Hi there 👋
+
 **QepwebSafor/QepwebSafor** is a ✨ _special_ ✨ repository because its `README.md` appears on my GitHub profile.
-
-
 
 ## TutorialGitHub
 
 * Comandos git 
 
-* El fluyo de trabajo en GitHub
+* El flujo de trabajo en GitHub con Git
 
 * Creado por Quica Espi con las enseñanzas de Freddier de Platzi
 
