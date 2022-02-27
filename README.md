@@ -23,4 +23,4 @@ Here are some ideas to get you started:
 
 * Creado por Quica Espi con las enseñanzas de Freddier de Platzi
 
-* Es un blog público disponible  en https://github.com/QepwebSafor/BlogTutorial.git
+* Es un blog público disponible  en https://github.com/QepwebSafor/TutorialGitHub.git
