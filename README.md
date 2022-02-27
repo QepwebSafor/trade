@@ -1,5 +1,5 @@
 
-**QepwebSafor/QepwebSafor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**QepwebSafor/QepwebSafor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on my GitHub profile.
 
 
 
