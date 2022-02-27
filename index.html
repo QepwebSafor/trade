@@ -92,13 +92,13 @@ El comando <span>git checkout + ID del commit</span> nos permite viajar en el ti
 
 </ul>
 
-<h1>¿PORQUE ES IMPORTANTE ESTO?</h1>
+<h3>¿Cuando usar git rm y git reset HEAD?</h3>
  <p>  
-     Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo de Staging para poder hacer commit de todos los demás.
+     Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo del Staging para poder hacer commit de todos los demás.
 
-     ¡Al usar git rm! lo que haremos será eliminar este archivo completamente de git! Todavía tendremos el historial de cambios de este archivo, con la eliminacion del archivo como su última actualización. Recuerda que en este caso no buscábamos eliminar un archivo, solo dejarlo como estaba y actualizado después, no en este commit.
+    Con <span>git rm</span></git> lo que haremos será eliminar este archivo completamente de git! Todavía tendremos el historial de cambios de este archivo, con la eliminacion del archivo como su última actualización. Recuerda que en este caso no buscábamos eliminar un archivo, solo dejarlo como estaba y actualizado después, no en este commit.
 
-     En cambio si usamos git reset HEAD, lo único que harémos será move estos cambios de Staging a Unstaged. Seguiremos teniendo los últimos cambios en el archivo, el repositorio mantendrá el archivo ( no con sus últimos cambios pero si con los últimos en los que hicimos commit) y no habremos perdido nada.
+     En cambio scon <span>git reset HEAD</span>, lo único que harémos será move estos cambios de Staging a Unstaged. Seguiremos teniendo los últimos cambios en el archivo, el repositorio mantendrá el archivo ( no con sus últimos cambios pero si con los últimos en los que hicimos commit) y no habremos perdido nada.
 
      Conclusión : lo mejor que puedes hacer para salvar tu puesto y evitar un incendio en tu trabajo es conocer muy bien la diferencia y los riesgos de todos los comandos de Git.
 

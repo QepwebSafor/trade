@@ -3,17 +3,17 @@
 
 **QepwebSafor/QepwebSafor** is a ✨ _special_ ✨ repository because its `README.md` appears on my GitHub profile.
 
-## TutorialGitHub
+## Tutorial_Git-GitHub
 
 * Comandos git 
 
 * El flujo de trabajo en GitHub con Git
 
-* Creado por Quica Espi con las enseñanzas de Freddier de Platzi
+* Creado por Quica Espi Puig
 
-* Es un blog público disponible  en https://github.com/QepwebSafor/BlogTutorial.git
+* Es un blog público disponible  en https://github.com/QepwebSafor/Tutorial_Git-GitHub.git
 
-* Página web: https://qepwebsafor.github.io/TutorialGitHub/
+* Página web:  https://qepwebsafor.github.io/Tutorial_Git-GitHub/
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...

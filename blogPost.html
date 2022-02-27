@@ -75,15 +75,17 @@ El comando git checkout + ID del commit nos permite viajar en el tiempo. Podremo
    Este comando es muy peligroso y debemos usarlo solo en caso de emergencia. Recordar que debemos usar algunas de estas dos opciones:
 
    Hay dos formas  de usar git reset: con el argumento --hard, borrando toda la información que tengamos en el área de staging ( y perdiendo todo para siempor). O un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de stagin para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
-
-    . git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en staging, así podemos aplicar las últimas actualizaciónes a un nuevo commit.
-
-    . git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commit y del área de staging se borra del historioal.
-
-    ¡Pero hay algo más!
-
-    . git reset HEAD: este es el comando para sacar archivos del área de stagin. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión  y los incluyamos de nuevo en staging con git add, por supuesto.
   </p>
+<ul>
+    <li> git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en staging, así podemos aplicar las últimas actualizaciónes a un nuevo commit.</li>
+
+    <li> git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commit y del área de staging se borra del historioal.</li>
+
+
+
+    <li> git reset HEAD: este es el comando para sacar archivos del área de stagin. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión  y los incluyamos de nuevo en staging con git add, por supuesto.</li>
+  </ul>
+ 
 <h1>¿PORQUE ES IMPORTANTE ESTO?</h1>
  <p>  
      Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo de Staging para poder hacer commit de todos los demás.
@@ -99,7 +101,7 @@ El comando git checkout + ID del commit nos permite viajar en el tiempo. Podremo
           </p>
         </div>
         <div id="footer">
-          Quica Espi Puig . En La Playa Gandia. 46730 Valencia Spain.
+          Quica Espi Puig . Grao de Gandia. 46730 Valencia Spain.
         </div>
       </div>
  
