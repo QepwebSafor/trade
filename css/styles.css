@@ -83,7 +83,7 @@ span {
   color:violet;
 }
 ul {
-  list-style: none;
+  list-style-type: style circle;
   margin-left: 1rem;
 }
 #cabecera {

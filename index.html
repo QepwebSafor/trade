@@ -25,7 +25,7 @@ Este comando se encargará de dos cosas: primero , crear una carpeta<span> .git<
 
 <h3>Ciclo de vida o estados de los archivos en Git:</h3>
 <p>Cuando trabajamos con git nuestros archivos pueden vivir y moverse entre 4 estados diferentes (cuando trabajamos con repositorios remotos pueden ser más estados):</p>
-<ul>
+<ul class="list-group">
 <li> Archivos <span>tracked</span>: son los archivos que viven dentro de GIt, no tienen cambios pendientes y sus últimas actualizaciones han sido guardadas en el repositorio gracias a los comandos git add y git commit.</li>
 
 <li> Archivos <span>Staged</span>: son archivos en Staging. Viven dentro de GIt y  son los que han sido  añadidos por el comando git add, aunque no se han consolidado sus cambios. GIt sabe de la existencia de estos cambios, pero no han sido guardados definitivamente en el repositorio porque falta ejecutar el comando commit.
@@ -36,20 +36,21 @@ Este comando se encargará de dos cosas: primero , crear una carpeta<span> .git<
 </li>
 </ul>
 </p>
-<h1> COMANDOS PARA MOVER ARCHIVOS ENTRE LOS ESTADOS DE GIT:</h1>
+<h3>Comandos para mover archivos entre los estados de Git </h3>
 
-<ul>
- <li> git status: nos permite ver el estado de todos nuestros archivos y carpetas.</li>
- <li> git add: nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre-del-archivo-o-carpeta para añadir archivos y carpetas individuales o git add -A para mover todos los archivos de nuestro proyecto ( tanto los Untracked como los Unstaged).</li>
- <li> git reset HEAD:  nos ayuda a traer archivos del estado Staged para devolverlos a su estado anterior. Si estaban los archivos en Unstaged, vuelven allí. Asi tambien como si estaban en Untracked.</li>
- <li>git commit: nos ayuda a llevar archivos del estado Unstaged al estado Tracked.Este es el estado donde los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios realizados y con el argumento -m escribirlo. (git commit -m).</li>
- <li><git rm: este comando necesita alguno de los siguientes argumento para poder ejecutarse correctamente:
-    <ul>
- <li>git rm --cached: Lleva los archivos que le indiquemos al estado Untracked.</li>
-  <li>git rm --force: Elimina los archivos de Git  y del disco duro. Git guarda el registro de la existencia de  los archivos, por lo que podremos recuperarlos si es necesario usando comandos más avanzados.</li></ul></li>
+<ul class="list-group">
+ <li><span> git status: </span>nos permite ver el estado de todos nuestros archivos y carpetas.</li>
+ <li><span> git add:</span> nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre-del-archivo-o-carpeta para añadir archivos y carpetas individuales o git add -A para mover todos los archivos de nuestro proyecto ( tanto los Untracked como los Unstaged).</li>
+ <li> <span>git reset HEAD: </span> nos ayuda a traer archivos del estado Staged para devolverlos a su estado anterior. Si estaban los archivos en Unstaged, vuelven allí. Asi tambien como si estaban en Untracked.</li>
+ <li<span>git commit:</span> nos ayuda a llevar archivos del estado Unstaged al estado Tracked.Este es el estado donde los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios realizados y con el argumento -m escribirlo. (git commit -m).</li>
+ <li><span>git rm:</span> este comando necesita alguno de los siguientes argumento para poder ejecutarse correctamente:
+    <ul class="list-group">
+ <li><span>git rm --cached:</span> Lleva los archivos que le indiquemos al estado Untracked.</li>
+  <li><span>git rm --force:</span> Elimina los archivos de Git  y del disco duro. Git guarda el registro de la existencia de  los archivos, por lo que podremos recuperarlos si es necesario usando comandos más avanzados.</li></ul></li>
 
 </ul>
-<h1>VOLVER EN EL TIEMPO EN NUESTRO REPOSITORIO UTILIZANDO RESET Y CHECKOUT</h1>
+<h3>Volver en el tiempo en nuestro repositorio utilizando reset y checkout</h3>
+
 <p>
 El comando <span>git checkout + ID del commit</span> nos permite viajar en el tiempo. Podremos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta es la forma de crear ramas y movernos entre ellas.
  
@@ -63,7 +64,7 @@ El comando <span>git checkout + ID del commit</span> nos permite viajar en el ti
   Este comando nos ayuda a eliminar archivos de GIt sin eliminar su historial del sistema de versiones. Esto quiere decir que si necesitamos recuperar el archivo solo debemos "viajar en el tiempo" y recuperar el último commit antes de borrar el archivo en cuestión.
 
   Recuerda que git rm no puede usarse así no más. Debemos usar uno de los flags para indicarle a GIt cómo eliminar los archivos que ya no necesitamos en la última versión del proyecto:
-<ul>
+<ul class="list-group">
    <li><span>git rm --cached: </span>
       Elimina los archivos de nuestro repositorio local y el área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a GIT que deje de trackear el historial de cambios de estos archivos, por lo que pasarán a un estado untracked.</li> 
    <li> <span>git rm --force:</span>
@@ -79,7 +80,7 @@ El comando <span>git checkout + ID del commit</span> nos permite viajar en el ti
 
    Hay dos formas  de usar git reset: con el argumento --hard, borrando toda la información que tengamos en el área de staging ( y perdiendo todo para siempor). O un poco más seguro, con el argumento --soft, que mantiene allí los archivos del área de stagin para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
   </p>
-<ul>
+<ul class="list-group">
     <li><span>git reset --soft: </span> todo el historial y los registros de Git pero guardamos los cambios que tengamos en staging, así podemos aplicar las últimas actualizaciónes a un nuevo commit. Mantiene  los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.</li>
 
 <li> <span>git reset --hard: </span>Borra todo. Todo todito, absolutamente todo. Toda la información de los commit y del área de staging se borra del historial.
