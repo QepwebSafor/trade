@@ -80,7 +80,9 @@ Por ejemplo, ¿ Cuantas veces en nuestro proyecto buscamos la palabra color?
 .-  Si queremos buscar cuántas veces utilizamos un atributo de HTML lo hacemos con 
             git grep -c "<p>"
 
+.- Si queremos buscar en los commits, por ejemplo la palabra cabecera lo hacemos con:
 
+            git log -S cabecera
 -------------------------------------------------------------------------------
 Lecturas de Git- documentation.
 
