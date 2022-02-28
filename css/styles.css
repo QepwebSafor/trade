@@ -70,17 +70,19 @@ h1{
 
 }
 h3{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color:#141414;
   font-weight:bold;
+  background-color:#1663bb;
 
 }
 p {
   margin: .5rem;
 }
 span {
-
-  color:violet;
+  font-size: 1.1rem;
+ padding: .2rem;
+  color:#f54cec;
 }
 ul {
   list-style-type: style type square;
