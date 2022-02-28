@@ -76,6 +76,20 @@ h3{
   background-color:#1663bb;
 
 }
+h4{
+  font-size: 1.1rem;
+  color:#141414;
+  font-weight:bold;
+  background-color:#f54cec;
+  max-width:fit-content;
+
+}
+.nav-link {
+  color:#141414;
+}
+.nav-link:hover {
+  color:#f54cec;
+}
 p {
   margin: .5rem;
 }

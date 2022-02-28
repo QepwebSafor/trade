@@ -2,7 +2,7 @@ Configurar herramientas
 ------------------------------------------------------
 Configura la información del usuario para todos los respositorios locales
 
-$ git config --global user.name "[name]"
+<h4>$ git config --global user.name "[name]"
 
 Establece el nombre que estará asociado a tus commits
 
