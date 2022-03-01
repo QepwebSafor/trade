@@ -98,7 +98,7 @@ span {
  padding: .2rem;
   color:#f54cec;
 }
-ul {
+ul, ol {
   list-style-type: style type square;
   margin-left: 1rem;
 }
