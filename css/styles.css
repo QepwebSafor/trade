@@ -96,7 +96,9 @@ p {
 span {
   font-size: 1.1rem;
  padding: .2rem;
-  color:#f54cec;
+  color:#141414;
+  font-weight:bold;
+  background-color:#f54cec;
 }
 ul, ol {
   list-style-type: style type square;
