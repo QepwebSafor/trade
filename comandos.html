@@ -34,12 +34,10 @@
         <p> Configurar la información del usuario para todos los respositorios locales</p>
         <ul>
         <li>
-            Establecer el nombre que estará asociado a tus commits
-        
-        
-       <h4>$ git config --global user.name "[name]"</h4> </li>
+            Establecer el nombre que estará asociado a tus commits 
+       : <h4>$ git config --global user.name "[name]"</h4> </li>
       <li> Establecer el e-mail que estará asociado a sus commits
-        <h4>$ git config --global user.email "[email address]"</li>
+        : <h4>$ git config --global user.email "[email address]"</li>
 
     </ul> 
        
@@ -48,12 +46,12 @@
      
         <p>Inicializar un nuevo repositorio u obtener uno de una URL existente</p>
         <ul>
-       <li> Crea un nuevo repositorio local con el nombre especificado</li>
-       <h4>$ git init [project-name]</h4> 
+       <li> Crea un nuevo repositorio local con el nombre especificado
+       : <h4>$ git init [project-name]</h4> </li>
        <li> Descarga un proyecto y toda su historial de versiones
        
         
-       <h4> $ git clone [url]</h4></li>
+       : <h4> $ git clone [url]</h4></li>
         
     </ul>
       
@@ -63,28 +61,28 @@
     </p>
     <ul>
     <li>Borra el archivo del directorio activo y lo pone en el área de espera en un estado de eliminación
-        <h4>$ git rm [file]</h4>
+        : <h4>$ git rm [file]</h4></li>
         
         <li>Retira el archivo del historial de control de versiones, pero preserva el archivo a nivel local 
         
-        <h4>$ git rm --cached [file]</h4></li>
+        : <h4>$ git rm --cached [file]</h4></li>
         
       
        <li> Cambia el nombre del archivo y lo prepara para ser guardado
         
-        <h4>$ git mv [file-original] [file-renamed]</h4></li>
+        : <h4>$ git mv [file-original] [file-renamed]</h4></li>
      
       
     </ul>   
       <h3>Suprimir el seguimiento de cambios</h3> 
       <p>
         Excluye los archivos temporales y las rutas</p>
-      <p>  Un archivo de texto llamado<h4>.gitignore </h4> suprime la creación accidental de versiones para archivos y rutas que concuerdan con los patrones especificados </p>
-      <h4>  *.log</h4>
-       <h4> build/</h4>
-        <h4>temp-*</h4>
+      <p>  Un archivo de texto llamado: <h4>.gitignore </h4> suprime la creación accidental de versiones para archivos y rutas que concuerdan con los patrones especificados </p>
+       <h4>  *.log</h4>
+        <h4> build/</h4>
+         <h4>temp-*</h4>
       
-       <p> Enumera todos los archivos ignorados en este proyecto</p>
+       <p> Enumera todos los archivos ignorados en este proyecto</p>:
         <h4>$ git ls-files --others --ignored --exclude-standard</h4>
         
     
@@ -92,20 +90,14 @@
       <p>
         Almacena y restaura cambios incompletos</p>
         <ul>
-        <li>Almacena temporalmente todos los archivos modificados de los cuales se tiene al menos una versión guardada 
-        <h4>$ git stash</h4></li>
+        <li>Almacena temporalmente todos los archivos modificados de los cuales se tiene al menos una versión guardada : <h4>$ git stash</h4></li>
         
-        <li>Restaura los archivos guardados más recientemente
+        <li>Restaura los archivos guardados más recientemente: <h4>$ git stash pop</h4></li>
         
-        <h4>$ git stash pop</h4></li>
-        
-        <li>Enumera todos los grupos de cambios que estan guardados temporalmente
-        
-        <h4>$ git stash list</h4></li>
+        <li>Enumera todos los grupos de cambios que estan guardados temporalmente: <h4>$ git stash list</h4></li>
         
        
-        <li>Elimina el grupo de cambios más reciente que se encuentra guardado temporalmente
-        <h4>$ git stash dro</h4>p</li>
+        <li>Elimina el grupo de cambios más reciente que se encuentra guardado temporalmente: <h4>$ git stash dro</h4></li>
     </ul>
        
      <h3>Efectuar cambios</h3>
@@ -113,74 +105,47 @@
         Revisa cambios y crea un commit
     </p>
     <ul>
-    <li>Enumera todos los archivos nuevos o modificados de los cuales se van a guardar cambios
-       <h4> $ git status</h4></li>
+    <li>Enumera todos los archivos nuevos o modificados de los cuales se van a guardar cambios: <h4> $ git status</h4></li>
         
-        <li>Muestra las diferencias entre archivos que no se han enviado aún al área de espera
-        
-        
-        <h4>$ git diff</h4></li>
+        <li>Muestra las diferencias entre archivos que no se han enviado aún al área de espera: <h4>$ git diff</h4></li>
         
     
-        <li>Guarda el estado del archivo en preparación para realizar un commit
+        <li>Guarda el estado del archivo en preparación para realizar un commit: <h4>$ git add [file]</h4></li>
+        <li>Muestra las diferencias del archivo entre el área de espera y la última versión del archivo: <h4>$ git diff --staged</h4></li>
         
-        <h4>$ git add [file]</h4></li>
-        <li>Muestra las diferencias del archivo entre el área de espera y la última versión del archivo
-        <h4>$ git diff --staged</h4></li>
+        <li>Mueve el archivo del área de espera, pero preserva su contenido: <h4> $ git reset [file]</h4></li>
         
-        <li>Mueve el archivo del área de espera, pero preserva su contenido
-        
-       <h4> $ git reset [file]</h4></li>
-        
-        <li>Registra los cambios del archivo permanentemente en el historial de versiones
-        
-       <h4>$ git commit -m"[descriptive message]"</h4></li>
+        <li>Registra los cambios del archivo permanentemente en el historial de versiones: <h4>$ git commit -m"[descriptive message]"</h4></li>
         
     </ul>
    
-        
         <h3>Cambios grupales</h3>
      <p>
         Nombra una serie de commits y combina esfuerzos ya completados
     </p>  
     <ul>
-    <li>Enumera todas las ramas en el repositorio actual
-       <h4> $ git branch</h4></li></ul>
-        <li>Crea una nueva rama 
-     
-       <h4> $ git branch [branch-name]</h4></li></ul>
+       <li>Enumera todas las ramas en el repositorio actual: <h4> $ git branch</h4></li>
+        <li>Crea una nueva rama: <h4> $ git branch [branch-name]</h4></li>
         
-        <li>Cambia a la rama especificada y actualiza el directorio activo 
+        <li>Cambia a la rama especificada y actualiza el directorio activo: <h4> $ git switch -c [branch-name]</h4></li>
         
-       <h4> $ git switch -c [branch-name]</h4></li></ul>
+        <li>Combina el historial de la rama especificada con la rama actual: <h4> $ git merge [branch-name]</h4></li>
         
-        <li>Combina el historial de la rama especificada con la rama actual
+        <li>Borra la rama especificada: <h4> $ git branch -d [branch-name]</h4></li>
+      </ul>
         
-       <h4> $ git merge [branch-name]</h4></li></ul>
-        
-        <li>Borra la rama especificada
-        
-       <h4> $ git branch -d [branch-name]</h4></li></ul>
-        
-    </ul>
-      
+ 
         <h3>Repasar historial</h3>
        <p>
         Navega e inspecciona la evolución de los archivos de proyecto
     </p>
     <ul>
-        <li>Enumera el historial de versiones para la rama actual
-        <h4>$ git log</h4></li>        
-        <li>Enumera el historial de versiones para el archivo, incluidos los cambios de nombre        
-        <h4>$ git log --follow [file]</h4></li>
+        <li>Enumera el historial de versiones para la rama actual: <h4>$ git log</h4></li>        
+        <li>Enumera el historial de versiones para el archivo, incluidos los cambios de nombre: <h4>$ git log --follow [file]</h4></li>
      
-        <li>Muestra las diferencias de contenido entre dos ramas
+        <li>Muestra las diferencias de contenido entre dos ramas: <h4>$ git diff [first-branch]...[second-branch]</h4></li>
         
-        <h4>$ git diff [first-branch]...[second-branch]</h4></li>
-        
-        <li>Produce metadatos y cambios de contenido del commit especificado
-        
-        <h4>$ git show [commit]</h4></li>
+        <li>Produce metadatos y cambios de contenido del commit especificado: <h4>$ git show [commit]</h4></li>
         
     </ul>
        
@@ -189,12 +154,9 @@
         Borra errores y elabora un historial de reemplazo
     </p>
     <ul>
-        <li>Deshace todos los commits después de [commit], preservando los cambios localmente
-        <h4>$ git reset [commit]</h4></li>
+        <li>Deshace todos los commits después de [commit], preservando los cambios localmente: <h4>$ git reset [commit]</h4></li>
         
-        <li>Desecha todo el historial y regresa al commit especificado
-        
-        <h4>$ git reset --hard [commit]</h4></li>
+        <li>Desecha todo el historial y regresa al commit especificado: <h4>$ git reset --hard [commit]</h4></li>
         
     </ul>
 
@@ -202,20 +164,12 @@
 <p>
         Registrar un marcador para un repositorio e intercambiar historial de versiones</p>
         <ul>
-        <li>Descarga todo el historial del marcador del repositorio
-       <h4> $ git fetch [bookmark]</h4></li>
+        <li>Descarga todo el historial del marcador del repositorio: <h4> $ git fetch [bookmark]</h4></li>
         
-        <li>Combina la rama del marcador con la rama local actual
+        <li>Combina la rama del marcador con la rama local actual: <h4>$ git merge [bookmark]/[branch]</h4></li>
+        <li>Sube todos los commits de la rama local a GitHub: <h4> $ git push [alias] [branch]</h4></li>
         
-        <h4>$ git merge [bookmark]/[branch]</h4></li>
-        <li>Sube todos los commits de la rama local a GitHub
-        
-        
-       <h4> $ git push [alias] [branch]</h4></li>
-        
-        <li>Descarga el historial del marcador e incorpora cambios
-        
-       <h4> $ git pull</h4></li>
+        <li>Descarga el historial del marcador e incorpora cambios: <h4> $ git pull</h4></li>
         
       
     </ul>

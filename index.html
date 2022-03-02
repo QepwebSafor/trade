@@ -10,8 +10,7 @@
 </head>
 <body>   
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><span>Curso Git </span></a>
-     
+        <a class="navbar-brand" href="#"><span>Curso Git </span></a>   
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="./index.html">Flujo de trabajo <span class="sr-only">(current)</span></a>
@@ -26,7 +25,7 @@
         <div id="post">
           <h3>¿Que es el staging y los repositorios?</h3>
           <p>
-            Para iniciar un repositorio, o sea, activar el sistema de control de versiones de Git en el proyecto, solo debes  ejecutar el comando git init.
+            Para iniciar un repositorio, o sea, activar el sistema de control de versiones de Git en el proyecto, solo debes  ejecutar el comando <span>$ git init</span>.
 Este comando se encargará de dos cosas: primero , crear una carpeta<span> .git</span>, donde se guardará todas la base de datos con cambios atómicos de nuestro proyecto; y segundo, creará un área conocida como <span>Staging</span> , que guardará temporalmente nuestros archivos cuando ejecutemos el comando add y nos permitirá, más adelante, guardar  estos cambios en el repositorio  con el comando commit.</p>
 
 <h3>Ciclo de vida o estados de los archivos en Git:</h3>
@@ -38,28 +37,28 @@ Este comando se encargará de dos cosas: primero , crear una carpeta<span> .git<
 </li>
 <li> Archivos <span> Unstaged</span>: son  como archivos en tracked pero Unstaged. Son archivos que viven en Git pero  no se les ha aplicado el comando git add ni el git commit. Git tiene un registro de estos archivos, pero no están actualizados, solo están guardadas sus últimas versiones  en el disco duro.
 </li>
- <li> Archivos <span>Untracked</span>: son archivos que no viven dentro de GIt, solo en el disco duro. No se les ha aplicado git add, así que Git no tiene registro de us existencia. Solo hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: <span>staged y untracked</span>. Esto pasa cuando guardas cambios con el comando git add, y antes de hacer el commit haces nuevos cambios que no estan en el Staging porque  no has aplicado git add.
+ <li> Archivos <span>Untracked</span>: son archivos que no viven dentro de Git, sólo en el disco duro. No se les ha aplicado git add, así que Git no tiene registro de su existencia. Solo hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: <span>staged y untracked</span>. Esto pasa cuando guardas cambios con el comando git add, y antes de hacer el commit haces nuevos cambios que no estan en el Staging porque  no has aplicado git add.
 </li>
 </ul>
 </p>
 <h3>Comandos para mover archivos entre los estados de Git </h3>
 
 <ul class="list-group">
- <li><span> git status: </span>nos permite ver el estado de todos nuestros archivos y carpetas.</li>
- <li><span> git add:</span> nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar <span>git add nombre-del-archivo-o-carpeta</span>para añadir archivos y carpetas individuales o <span>git add -A </span>
+ <li><span>$ git status: </span>nos permite ver el estado de todos nuestros archivos y carpetas.</li>
+ <li><span>$ git add:</span> nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar <span>$ git add nombre-del-archivo-o-carpeta</span>para añadir archivos y carpetas individuales o <span>$ git add -A </span>
   para mover todos los archivos de nuestro proyecto ( tanto los Untracked como los Unstaged).</li>
- <li> <span>git reset HEAD: </span> nos ayuda a traer archivos del estado Staged para devolverlos a su estado anterior. Si estaban los archivos en Unstaged, vuelven allí. Asi tambien como si estaban en Untracked.</li>
- <li><span>git commit:</span> nos ayuda a llevar archivos del estado Unstaged al estado Tracked.Este es el estado donde los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios realizados y con el argumento -m escribirlo. (git commit -m).</li>
- <li><span>git rm:</span> este comando necesita alguno de los siguientes argumento para poder ejecutarse correctamente:
+ <li> <span>$ git reset HEAD: </span> nos ayuda a traer archivos del estado Staged para devolverlos a su estado anterior. Si estaban los archivos en Unstaged, vuelven allí. Asi tambien como si estaban en Untracked.</li>
+ <li><span>$ git commit:</span> nos ayuda a llevar archivos del estado Unstaged al estado Tracked.Este es el estado donde los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios realizados y con el argumento -m escribirlo. (git commit -m).</li>
+ <li><span>$ git rm:</span> este comando necesita alguno de los siguientes argumento para poder ejecutarse correctamente:
     <ul class="list-group">
- <li><span>git rm --cached:</span> Lleva los archivos que le indiquemos al estado Untracked.</li>
-  <li><span>git rm --force:</span> Elimina los archivos de Git  y del disco duro. Git guarda el registro de la existencia de  los archivos, por lo que podremos recuperarlos si es necesario usando comandos más avanzados.</li></ul></li>
+ <li><span>$ git rm --cached:</span> Lleva los archivos que le indiquemos al estado Untracked.</li>
+  <li><span>$ git rm --force:</span> Elimina los archivos de Git  y del disco duro. Git guarda el registro de la existencia de  los archivos, por lo que podremos recuperarlos si es necesario usando comandos más avanzados.</li></ul></li>
 
 </ul>
 <h3>Volver en el tiempo en nuestro repositorio utilizando reset y checkout</h3>
 
 <p>
-El comando <span>git checkout + ID del commit</span> nos permite viajar en el tiempo. Podremos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta es la forma de crear ramas y movernos entre ellas.
+El comando <span>$ git checkout + ID del commit</span> nos permite viajar en el tiempo. Podremos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta es la forma de crear ramas y movernos entre ellas.
  
  Usando el comando </span>git reset</span> volvemos en el tiempo y borramos los cambios que hicimos después de este commit.
 
@@ -72,9 +71,9 @@ El comando <span>git checkout + ID del commit</span> nos permite viajar en el ti
 
   Recuerda que git rm no puede usarse porque si. Debemos usar uno de los flags para indicarle a Git cómo eliminar los archivos que ya no necesitamos en la última versión del proyecto:
 <ul class="list-group">
-   <li><span>git rm --cached: </span>
+   <li><span>$ git rm --cached: </span>
       Elimina los archivos de nuestro repositorio local y el área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a GIT que deje de trackear el historial de cambios de estos archivos, por lo que pasarán a un estado untracked.</li> 
-   <li> <span>git rm --force:</span>
+   <li> <span>$ git rm --force:</span>
       Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario ( pero  debemos usar comandos más avanzados).> </li>
    
   </ul>
@@ -88,12 +87,12 @@ El comando <span>git checkout + ID del commit</span> nos permite viajar en el ti
  
   </p>
 <ul class="list-group">
-    <li><span>git reset --soft: </span> todo el historial y los registros de Git pero guardamos los cambios que tengamos en staging, así podemos aplicar las últimas actualizaciónes a un nuevo commit. Mantiene  los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.</li>
+    <li><span>$ git reset --soft: </span> todo el historial y los registros de Git pero guardamos los cambios que tengamos en staging, así podemos aplicar las últimas actualizaciónes a un nuevo commit. Mantiene  los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.</li>
 
-<li> <span>git reset --hard: </span>Borra todo. Todo todito, absolutamente todo. Toda la información de los commit y del área de staging se borra del historial.
+<li> <span>$ git reset --hard: </span>Borra todo. Todo todito, absolutamente todo. Toda la información de los commit y del área de staging se borra del historial.
     Borra toda la información que tengamos en el área de staging ( y perdiendo todo para siempre)</li>
 
-<li> <span>git reset HEAD:</span> este es el comando para sacar archivos del área de stagin. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión  y los incluyamos de nuevo en staging con git add, por supuesto.</li>
+<li> <span>$ git reset HEAD:</span> este es el comando para sacar archivos del área de stagin. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión  y los incluyamos de nuevo en staging con git add, por supuesto.</li>
 
 </ul>
 
@@ -101,16 +100,16 @@ El comando <span>git checkout + ID del commit</span> nos permite viajar en el ti
  <p>  
      Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo del Staging para poder hacer commit de todos los demás.</p>
 <p>
-    Con <span>git rm</span></git> lo que haremos será eliminar este archivo completamente de git! Todavía tendremos el historial de cambios de este archivo, con la eliminacion del archivo como su última actualización. Recuerda que en este caso no buscábamos eliminar un archivo, solo dejarlo como estaba y actualizado después, no en este commit.
+    Con <span>$ git rm</span></git> lo que haremos será eliminar este archivo completamente de git! Todavía tendremos el historial de cambios de este archivo, con la eliminacion del archivo como su última actualización. Recuerda que en este caso no buscábamos eliminar un archivo, solo dejarlo como estaba y actualizado después, no en este commit.
   </p>
   <p>
-     En cambio scon <span>git reset HEAD</span>, lo único que harémos será move estos cambios de Staging a Unstaged. Seguiremos teniendo los últimos cambios en el archivo, el repositorio mantendrá el archivo ( no con sus últimos cambios pero si con los últimos en los que hicimos commit) y no habremos perdido nada.
+     En cambio scon <span>$ git reset HEAD</span>, lo único que harémos será move estos cambios de Staging a Unstaged. Seguiremos teniendo los últimos cambios en el archivo, el repositorio mantendrá el archivo ( no con sus últimos cambios pero si con los últimos en los que hicimos commit) y no habremos perdido nada.
     </p>
     <h3>Introducción a las ramas o branches de Git</h3>
    
 <p>
     Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto es porque queremos trabajar una parte muy especifica de la aplicación o simplemente experimentar.
-    La cabecera o HEAD representa la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el ultimo commit de nuestra rama principal. Pero podemos cambiarlo: <span>git checkout -b rama</span> o crear una rama: <span>git branch rama</span> o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos: <span>git reset id-commit</span> o <span>git checkout rama-o-id-commit</span>.
+    La cabecera o HEAD representa la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el ultimo commit de nuestra rama principal. Pero podemos cambiarlo: <span>$ git checkout -b rama</span> o crear una rama: <span>$ git branch rama</span> o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos: <span>$ git reset id-commit</span> o <span>$ git checkout rama-o-id-commit</span>.
   </p>
   <h3>Cómo funcionan las llaves públicas y privadas</h3>
 <p>
@@ -162,7 +161,7 @@ Para esto entrarás a la COnfiguración de llaves SSH en GITHUB, crear una nueva
 Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
 
 <p>
-<span>git remote set-url origin url-ssh-del-repositorio-en-gitHub</span>
+<span>$ git remote set-url origin url-ssh-del-repositorio-en-gitHub</span>
 </p>
 <h3>Tags o etiquetas</h3>
 <p>
@@ -173,15 +172,15 @@ Comandos para trabajar con etiquetas:
   <ul>
 <li>Crear un nuevo tag y asignarlo a un commit:<br>
 
-<span>git tag -a nombre-del-tag id-del-commit</span></li>
+<span>$ git tag -a nombre-del-tag id-del-commit</span></li>
 
 <li> Borrar un tag en el repositorio local:<br>
 
-<span>git tag -d nombre-del-tag</span></li>
+<span>$ git tag -d nombre-del-tag</span></li>
 
 <li>Listar los tags de nuestro repositorio local:<br>
 
-<span>git tag</span></li>
+<span>$ git tag</span></li>
 </uL>
 
 <h3>Flujo de trabajo básico con un repositorio remoto</h3>
@@ -197,15 +196,15 @@ Estos servidores remotos pueden estar alojados en GITHUB, GITLAB, BitBucket, ent
 </p>
 Esto significa que debes aprendender algunos nuevos comandos:
 <ul>
-<li> <span>git clone url_del_servidor_remoto</span>:  Nos permite descargar los archivos de la última  versión de la rama principal y todo el historial de cambios en la carpeta .git.</li>
+<li> <span>$ git clone url_del_servidor_remoto</span>:  Nos permite descargar los archivos de la última  versión de la rama principal y todo el historial de cambios en la carpeta .git.</li>
 
-<li> <span>git push</span>: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.</li>
+<li> <span>$ git push</span>: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.</li>
 </li>
-<li> <span>git fetch</span>: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local ( en caso de haberlas).</li>
+<li> <span>$ git fetch</span>: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local ( en caso de haberlas).</li>
 
-<li><span> git merge</span>: Tambien usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.</li>
+<li><span>$ git merge</span>: Tambien usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.</li>
 
-<li> <span>git pull</span>: Básicamente, git fetch y git merge al mismo tiempo.</li>
+<li> <span>$ git pull</span>: Básicamente, git fetch y git merge al mismo tiempo.</li>
 </ul>
 <h3>Flujo de trabajo profesional con pull request</h3>
 <p>
@@ -223,37 +222,37 @@ El comando rebase es una mala práctica, nunca se debe usar, pero para efectos d
 <ul>
 
 <li> Cambiamos a la rama que queremos traer los cambios
-<span>git checkout experiment</span>
+<span>$ git checkout experiment</span>
 </li>
 <li> Aplicamos rebase para traer los cambios de la rama que queremos
-<span>git rebase main</span>
+<span>$ git rebase main</span>
 </li>
 </ul>
 <h3>git stash: guardar cambios en memoria y recuperarlos después</h3>
 
 <p>
 
-Cuando necesitemos regresar en el tiempo porque borramos alguna línea de código pero no queremos pasarnos a otra rama porque nos daría un error al tener que pasar por ese "mal cambio" que hicimos en stage, podremos usar <span>git stash</span> y regresar así al cambio anterior que hicimos.
+Cuando necesitemos regresar en el tiempo porque borramos alguna línea de código pero no queremos pasarnos a otra rama porque nos daría un error al tener que pasar por ese "mal cambio" que hicimos en stage, podremos usar <span>$ git stash</span> y regresar así al cambio anterior que hicimos.
 </p>
-<span>git stash</span> es típico cuando hacemos cambios que no merecen una rama o no merecen un rebase si no que  simplemente estamos probando algo y queremos volver rápidamente a la versión anterior que es la correcta.
+<span>$ git stash</span> es típico cuando hacemos cambios que no merecen una rama o no merecen un rebase si no que  simplemente estamos probando algo y queremos volver rápidamente a la versión anterior que es la correcta.
 <h3>git clean: limpiar tu proyecto de archivos no deseados</h3>
 
 <p>A veces creas archivos cuando estas realizando proyectos y que realmente no forman parte de nuestro directorio de trabajo, que no los deberias agregar y lo sabes.</p>
 
 <ul>
 <li>Para saber que archivos son los que vamos a borrar tecleamos:<br>
-  <span>git clean --dry-run</span></li> 
+  <span>$ git clean --dry-run</span></li> 
 
  <li>Para borrar todos los archivos listados (que no sean carpetas) tecleamos:<br>
 
- <span>git clean -f </span>       </li>  
+ <span>$ git clean -f </span>       </li>  
 </ul>
 <h3>git cherry-pick: traer commits viejos al head de un branch</h3>
 <P>
 
 Existe un mundo alternativo en el cual vamos avanzado en una rama pero necesitamos en main uno de estos avances de la rama, para esto utilizaremos el comando :<bR>
 
-       <span>git cherry-pick IDCommit.</span> <br>
+       <span>$ git cherry-pick IDCommit.</span> <br>
 
 cherry-pick es una mala práctica porque significa que estamos reconstruyendo la historia,  usa cherry-pick con conocimiento de causa. No saber que es lo que estas haciendo  es peligroso.
 </P>
@@ -264,7 +263,7 @@ cherry-pick es una mala práctica porque significa que estamos reconstruyendo la
 
  A veces hacemos un commit, pero resulta que no lo queremos mandar porque faltaba algo más. Utilizamos:
 
-            <span>git commit --amend</span><br>
+            <span>$ git commit --amend</span><br>
 
   amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.  
   
@@ -275,13 +274,13 @@ cherry-pick es una mala práctica porque significa que estamos reconstruyendo la
 ¿Que pasa cuando todo se rompe y no sabemos que está pasando? Con:<br>
 
 
-       <span>git reset HashDelHEAD </span> <br>
+       <span>$ git reset HashDelHEAD </span> <br>
 
 volveremos al estado en que el proyecto funcionaba:
 </p>
 <ul>
-<li><span>git reset --soft HashDelHEAD:</span> te mantiene lo que tengas en staging ahí.</li> 
-<li><span>git reset --hard HashDelHEAD:</span> resetea absolutamente todo lo que tengas en staging.</li> 
+<li><span>$ git reset --soft HashDelHEAD:</span> te mantiene lo que tengas en staging ahí.</li> 
+<li><span>$ git reset --hard HashDelHEAD:</span> resetea absolutamente todo lo que tengas en staging.</li> 
 </ul>
 <p>
 git reset es una mala práctica, se recomienda no usarlo; debe ser el último recurso.
@@ -293,15 +292,15 @@ A medida que se hace más grande el proyecto quieres ir buscando más cosas.
 Por ejemplo, ¿ Cuantas veces en nuestro proyecto buscamos la palabra color?
 </p>
 <ul>
-<li>Con <span>git grep -n color </span>  nos saldrá un output que nos dirá en que línea está lo que estamos buscando.</li> 
-<li> Con  <span>git grep -c color</span> nos saldrá un output que nos dirá cuantas veces se repite esa palabra y en que archivos.</li>
+<li>Con <span>$ git grep -n color </span>  nos saldrá un output que nos dirá en que línea está lo que estamos buscando.</li> 
+<li> Con  <span>$ git grep -c color</span> nos saldrá un output que nos dirá cuantas veces se repite esa palabra y en que archivos.</li>
 
 <li> Si queremos buscar cuántas veces utilizamos un atributo de HTML lo hacemos con  
-  <span>git grep -c "etiqueta html"</span></li> 
+  <span>$ git grep -c "etiqueta html"</span></li> 
 
 <li>Si queremos buscar en los commits, por ejemplo la palabra cabecera lo hacemos con: 
 
-  <span>git log -S cabecera</span></li> 
+  <span>$ git log -S cabecera</span></li> 
 </ul>
 
         </div>
