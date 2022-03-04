@@ -12,9 +12,7 @@
 * Creado por Quica Espi Puig
 
 
-* Es un blog público disponible  en https://github.com/QepwebSafor/Tutorial_Git-GitHub.git
 
-* Página web:  https://qepwebsafor.github.io/Tutorial_Git-GitHub/
 
 * Es un blog público disponible  en https://github.com/QepwebSafor/trade.git
 
