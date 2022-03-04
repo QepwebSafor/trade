@@ -3,7 +3,7 @@
 
 **QepwebSafor/QepwebSafor** is a ✨ _special_ ✨ repository because its `README.md` appears on my GitHub profile.
 
-## Tutorial_Git-GitHub
+## Introducción al trading con criptomonedas
 
 * Comandos git 
 
@@ -11,9 +11,15 @@
 
 * Creado por Quica Espi Puig
 
+
+* Es un blog público disponible  en https://github.com/QepwebSafor/Tutorial_Git-GitHub.git
+
+* Página web:  https://qepwebsafor.github.io/Tutorial_Git-GitHub/
+
 * Es un blog público disponible  en https://github.com/QepwebSafor/trade.git
 
 * Página web:  https://qepwebsafor.github.io/trade/
+
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
